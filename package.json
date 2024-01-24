@@ -1,0 +1,37 @@
+{
+  "name": "@hina/solid-tiptap",
+  "version": "0.0.1",
+  "type": "module",
+  "module": "dist/index",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint . -c ../../eslint.config.js",
+    "lint:prettier": "prettier -c . --cache --ignore-path=../../.prettierignore",
+    "typecheck": "tsc --noEmit -p tsconfig.json --composite false",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.56.0",
+    "@tiptap/core": "^2.1.16",
+    "@tiptap/pm": "^2.1.16",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "npm:eslint-plugin-i@^2.29.1",
+    "eslint-plugin-solid": "^0.13.1",
+    "globals": "^13.24.0",
+    "lefthook": "^1.6.0",
+    "prettier": "^3.2.4",
+    "solid-js": "^1.8.12",
+    "vite": "^5.0.12",
+    "vite-plugin-dts": "^3.7.1",
+    "vite-plugin-solid": "^2.8.3"
+  },
+  "peerDependencies": {
+    "@tiptap/core": "^2",
+    "@tiptap/pm": "^2",
+    "solid-js": "^1.7"
+  }
+}
